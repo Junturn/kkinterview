@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4A6AD38FA51BCC9E2FC91F5 /* Pods_kkinterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A32CDA86A238A5300D4571A /* Pods_kkinterview.framework */; };
+		ED01D4FB29F00A0E00A05338 /* inviteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED01D4F929F00A0E00A05338 /* inviteCell.m */; };
+		ED01D4FC29F00A0E00A05338 /* inviteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED01D4FA29F00A0E00A05338 /* inviteCell.xib */; };
+		ED01D4FF29F0230800A05338 /* RefreshUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED01D4FE29F0230800A05338 /* RefreshUITableView.m */; };
+		EDABA03229EEBADC006BD5C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA03129EEBADC006BD5C9 /* AppDelegate.m */; };
+		EDABA03529EEBADC006BD5C9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA03429EEBADC006BD5C9 /* SceneDelegate.m */; };
+		EDABA03829EEBADC006BD5C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA03729EEBADC006BD5C9 /* ViewController.m */; };
+		EDABA03B29EEBADC006BD5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDABA03929EEBADC006BD5C9 /* Main.storyboard */; };
+		EDABA03D29EEBADD006BD5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDABA03C29EEBADD006BD5C9 /* Assets.xcassets */; };
+		EDABA04029EEBADD006BD5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDABA03E29EEBADD006BD5C9 /* LaunchScreen.storyboard */; };
+		EDABA04329EEBADD006BD5C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA04229EEBADD006BD5C9 /* main.m */; };
+		EDABA05129EEC22A006BD5C9 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA04F29EEC22A006BD5C9 /* ProductViewController.m */; };
+		EDABA05229EEC22A006BD5C9 /* ProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDABA05029EEC22A006BD5C9 /* ProductViewController.xib */; };
+		EDABA05629EEC241006BD5C9 /* FirendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA05429EEC241006BD5C9 /* FirendViewController.m */; };
+		EDABA05729EEC241006BD5C9 /* FirendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDABA05529EEC241006BD5C9 /* FirendViewController.xib */; };
+		EDABA05A29EEC24D006BD5C9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA05929EEC24D006BD5C9 /* HomeViewController.m */; };
+		EDABA05D29EEC25D006BD5C9 /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA05C29EEC25D006BD5C9 /* ManagerViewController.m */; };
+		EDABA06029EEC26A006BD5C9 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA05F29EEC26A006BD5C9 /* SettingsViewController.m */; };
+		EDFD83C629EFB07D00FE614C /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD83C029EFB07D00FE614C /* UIView+frame.m */; };
+		EDFD83C729EFB07D00FE614C /* QiPageMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD83C229EFB07D00FE614C /* QiPageMenuView.m */; };
+		EDFD83C829EFB07D00FE614C /* QiPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD83C529EFB07D00FE614C /* QiPageContentView.m */; };
+		EDFD83CD29EFBBED00FE614C /* FriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD83CB29EFBBED00FE614C /* FriendListViewController.m */; };
+		EDFD83CE29EFBBED00FE614C /* FriendListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDFD83CC29EFBBED00FE614C /* FriendListViewController.xib */; };
+		EDFD83D229EFCE1400FE614C /* inforCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD83D029EFCE1400FE614C /* inforCell.m */; };
+		EDFD83D329EFCE1400FE614C /* inforCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDFD83D129EFCE1400FE614C /* inforCell.xib */; };
+		EDFD83D829EFD8B900FE614C /* KKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD83D729EFD8B900FE614C /* KKRequest.m */; };
+		EDFD83DC29EFE1B200FE614C /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD83DB29EFE1B200FE614C /* Friend.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A32CDA86A238A5300D4571A /* Pods_kkinterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kkinterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6AE4A851DA91BC77718718 /* Pods-kkinterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkinterview.debug.xcconfig"; path = "Target Support Files/Pods-kkinterview/Pods-kkinterview.debug.xcconfig"; sourceTree = "<group>"; };
+		C4B955F516CEACD7A34BEE1C /* Pods-kkinterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkinterview.release.xcconfig"; path = "Target Support Files/Pods-kkinterview/Pods-kkinterview.release.xcconfig"; sourceTree = "<group>"; };
+		ED01D4F829F00A0E00A05338 /* inviteCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inviteCell.h; sourceTree = "<group>"; };
+		ED01D4F929F00A0E00A05338 /* inviteCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = inviteCell.m; sourceTree = "<group>"; };
+		ED01D4FA29F00A0E00A05338 /* inviteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inviteCell.xib; sourceTree = "<group>"; };
+		ED01D4FD29F0230800A05338 /* RefreshUITableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshUITableView.h; sourceTree = "<group>"; };
+		ED01D4FE29F0230800A05338 /* RefreshUITableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshUITableView.m; sourceTree = "<group>"; };
+		EDABA02D29EEBADC006BD5C9 /* kkinterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkinterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDABA03029EEBADC006BD5C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDABA03129EEBADC006BD5C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDABA03329EEBADC006BD5C9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EDABA03429EEBADC006BD5C9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EDABA03629EEBADC006BD5C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDABA03729EEBADC006BD5C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDABA03A29EEBADC006BD5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDABA03C29EEBADD006BD5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDABA03F29EEBADD006BD5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDABA04129EEBADD006BD5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDABA04229EEBADD006BD5C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDABA04E29EEC22A006BD5C9 /* ProductViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		EDABA04F29EEC22A006BD5C9 /* ProductViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		EDABA05029EEC22A006BD5C9 /* ProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductViewController.xib; sourceTree = "<group>"; };
+		EDABA05329EEC241006BD5C9 /* FirendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirendViewController.h; sourceTree = "<group>"; };
+		EDABA05429EEC241006BD5C9 /* FirendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirendViewController.m; sourceTree = "<group>"; };
+		EDABA05529EEC241006BD5C9 /* FirendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirendViewController.xib; sourceTree = "<group>"; };
+		EDABA05829EEC24D006BD5C9 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EDABA05929EEC24D006BD5C9 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EDABA05B29EEC25D006BD5C9 /* ManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
+		EDABA05C29EEC25D006BD5C9 /* ManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
+		EDABA05E29EEC26A006BD5C9 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		EDABA05F29EEC26A006BD5C9 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		EDABA06129EED043006BD5C9 /* CommandDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandDef.h; sourceTree = "<group>"; };
+		EDFD83C029EFB07D00FE614C /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		EDFD83C129EFB07D00FE614C /* QiPageMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiPageMenuView.h; sourceTree = "<group>"; };
+		EDFD83C229EFB07D00FE614C /* QiPageMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiPageMenuView.m; sourceTree = "<group>"; };
+		EDFD83C329EFB07D00FE614C /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		EDFD83C429EFB07D00FE614C /* QiPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiPageContentView.h; sourceTree = "<group>"; };
+		EDFD83C529EFB07D00FE614C /* QiPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiPageContentView.m; sourceTree = "<group>"; };
+		EDFD83CA29EFBBED00FE614C /* FriendListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendListViewController.h; sourceTree = "<group>"; };
+		EDFD83CB29EFBBED00FE614C /* FriendListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendListViewController.m; sourceTree = "<group>"; };
+		EDFD83CC29EFBBED00FE614C /* FriendListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendListViewController.xib; sourceTree = "<group>"; };
+		EDFD83CF29EFCE1400FE614C /* inforCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inforCell.h; sourceTree = "<group>"; };
+		EDFD83D029EFCE1400FE614C /* inforCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = inforCell.m; sourceTree = "<group>"; };
+		EDFD83D129EFCE1400FE614C /* inforCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inforCell.xib; sourceTree = "<group>"; };
+		EDFD83D629EFD8B900FE614C /* KKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRequest.h; sourceTree = "<group>"; };
+		EDFD83D729EFD8B900FE614C /* KKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRequest.m; sourceTree = "<group>"; };
+		EDFD83DA29EFE1B200FE614C /* Friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		EDFD83DB29EFE1B200FE614C /* Friend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDABA02A29EEBADC006BD5C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4A6AD38FA51BCC9E2FC91F5 /* Pods_kkinterview.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EC9899757C8908C358772EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A32CDA86A238A5300D4571A /* Pods_kkinterview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C12E8F2D32AF8C912C13EB98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA6AE4A851DA91BC77718718 /* Pods-kkinterview.debug.xcconfig */,
+				C4B955F516CEACD7A34BEE1C /* Pods-kkinterview.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDABA02429EEBADC006BD5C9 = {
+			isa = PBXGroup;
+			children = (
+				EDABA02F29EEBADC006BD5C9 /* kkinterview */,
+				EDABA02E29EEBADC006BD5C9 /* Products */,
+				C12E8F2D32AF8C912C13EB98 /* Pods */,
+				8EC9899757C8908C358772EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDABA02E29EEBADC006BD5C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDABA02D29EEBADC006BD5C9 /* kkinterview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDABA02F29EEBADC006BD5C9 /* kkinterview */ = {
+			isa = PBXGroup;
+			children = (
+				EDABA03029EEBADC006BD5C9 /* AppDelegate.h */,
+				EDABA03129EEBADC006BD5C9 /* AppDelegate.m */,
+				EDABA03329EEBADC006BD5C9 /* SceneDelegate.h */,
+				EDABA03429EEBADC006BD5C9 /* SceneDelegate.m */,
+				EDABA03629EEBADC006BD5C9 /* ViewController.h */,
+				EDABA03729EEBADC006BD5C9 /* ViewController.m */,
+				EDFD83D929EFE19900FE614C /* CusObject */,
+				EDFD83D529EFD89800FE614C /* API */,
+				EDFD83D429EFCE1900FE614C /* CusCell */,
+				EDFD83C929EFBBB100FE614C /* FriendView */,
+				EDABA04D29EEC202006BD5C9 /* TabbarViewController */,
+				EDFD83BE29EFB04F00FE614C /* ThirdParty */,
+				EDABA03929EEBADC006BD5C9 /* Main.storyboard */,
+				EDABA06129EED043006BD5C9 /* CommandDef.h */,
+				EDABA03C29EEBADD006BD5C9 /* Assets.xcassets */,
+				EDABA03E29EEBADD006BD5C9 /* LaunchScreen.storyboard */,
+				EDABA04129EEBADD006BD5C9 /* Info.plist */,
+				EDABA04229EEBADD006BD5C9 /* main.m */,
+			);
+			path = kkinterview;
+			sourceTree = "<group>";
+		};
+		EDABA04D29EEC202006BD5C9 /* TabbarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EDABA04E29EEC22A006BD5C9 /* ProductViewController.h */,
+				EDABA04F29EEC22A006BD5C9 /* ProductViewController.m */,
+				EDABA05029EEC22A006BD5C9 /* ProductViewController.xib */,
+				EDABA05329EEC241006BD5C9 /* FirendViewController.h */,
+				EDABA05429EEC241006BD5C9 /* FirendViewController.m */,
+				EDABA05529EEC241006BD5C9 /* FirendViewController.xib */,
+				EDABA05829EEC24D006BD5C9 /* HomeViewController.h */,
+				EDABA05929EEC24D006BD5C9 /* HomeViewController.m */,
+				EDABA05B29EEC25D006BD5C9 /* ManagerViewController.h */,
+				EDABA05C29EEC25D006BD5C9 /* ManagerViewController.m */,
+				EDABA05E29EEC26A006BD5C9 /* SettingsViewController.h */,
+				EDABA05F29EEC26A006BD5C9 /* SettingsViewController.m */,
+			);
+			path = TabbarViewController;
+			sourceTree = "<group>";
+		};
+		EDFD83BE29EFB04F00FE614C /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD83BF29EFB06A00FE614C /* QisharePageController */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		EDFD83BF29EFB06A00FE614C /* QisharePageController */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD83C429EFB07D00FE614C /* QiPageContentView.h */,
+				EDFD83C529EFB07D00FE614C /* QiPageContentView.m */,
+				EDFD83C129EFB07D00FE614C /* QiPageMenuView.h */,
+				EDFD83C229EFB07D00FE614C /* QiPageMenuView.m */,
+				EDFD83C329EFB07D00FE614C /* UIView+frame.h */,
+				EDFD83C029EFB07D00FE614C /* UIView+frame.m */,
+			);
+			name = QisharePageController;
+			sourceTree = "<group>";
+		};
+		EDFD83C929EFBBB100FE614C /* FriendView */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD83CA29EFBBED00FE614C /* FriendListViewController.h */,
+				EDFD83CB29EFBBED00FE614C /* FriendListViewController.m */,
+				EDFD83CC29EFBBED00FE614C /* FriendListViewController.xib */,
+			);
+			path = FriendView;
+			sourceTree = "<group>";
+		};
+		EDFD83D429EFCE1900FE614C /* CusCell */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD83CF29EFCE1400FE614C /* inforCell.h */,
+				EDFD83D029EFCE1400FE614C /* inforCell.m */,
+				EDFD83D129EFCE1400FE614C /* inforCell.xib */,
+				ED01D4F829F00A0E00A05338 /* inviteCell.h */,
+				ED01D4F929F00A0E00A05338 /* inviteCell.m */,
+				ED01D4FA29F00A0E00A05338 /* inviteCell.xib */,
+			);
+			path = CusCell;
+			sourceTree = "<group>";
+		};
+		EDFD83D529EFD89800FE614C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD83D629EFD8B900FE614C /* KKRequest.h */,
+				EDFD83D729EFD8B900FE614C /* KKRequest.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EDFD83D929EFE19900FE614C /* CusObject */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD83DA29EFE1B200FE614C /* Friend.h */,
+				EDFD83DB29EFE1B200FE614C /* Friend.m */,
+				ED01D4FD29F0230800A05338 /* RefreshUITableView.h */,
+				ED01D4FE29F0230800A05338 /* RefreshUITableView.m */,
+			);
+			path = CusObject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDABA02C29EEBADC006BD5C9 /* kkinterview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDABA04629EEBADD006BD5C9 /* Build configuration list for PBXNativeTarget "kkinterview" */;
+			buildPhases = (
+				27D57541D2E3732ED59BFCAB /* [CP] Check Pods Manifest.lock */,
+				EDABA02929EEBADC006BD5C9 /* Sources */,
+				EDABA02A29EEBADC006BD5C9 /* Frameworks */,
+				EDABA02B29EEBADC006BD5C9 /* Resources */,
+				F238DC9480F410AE6A0F34C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kkinterview;
+			productName = kkinterview;
+			productReference = EDABA02D29EEBADC006BD5C9 /* kkinterview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDABA02529EEBADC006BD5C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					EDABA02C29EEBADC006BD5C9 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = EDABA02829EEBADC006BD5C9 /* Build configuration list for PBXProject "kkinterview" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDABA02429EEBADC006BD5C9;
+			productRefGroup = EDABA02E29EEBADC006BD5C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDABA02C29EEBADC006BD5C9 /* kkinterview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDABA02B29EEBADC006BD5C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDABA04029EEBADD006BD5C9 /* LaunchScreen.storyboard in Resources */,
+				EDABA03D29EEBADD006BD5C9 /* Assets.xcassets in Resources */,
+				EDFD83D329EFCE1400FE614C /* inforCell.xib in Resources */,
+				EDFD83CE29EFBBED00FE614C /* FriendListViewController.xib in Resources */,
+				EDABA05229EEC22A006BD5C9 /* ProductViewController.xib in Resources */,
+				EDABA05729EEC241006BD5C9 /* FirendViewController.xib in Resources */,
+				ED01D4FC29F00A0E00A05338 /* inviteCell.xib in Resources */,
+				EDABA03B29EEBADC006BD5C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27D57541D2E3732ED59BFCAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kkinterview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F238DC9480F410AE6A0F34C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kkinterview/Pods-kkinterview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kkinterview/Pods-kkinterview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kkinterview/Pods-kkinterview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDABA02929EEBADC006BD5C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDABA05129EEC22A006BD5C9 /* ProductViewController.m in Sources */,
+				ED01D4FF29F0230800A05338 /* RefreshUITableView.m in Sources */,
+				EDABA03829EEBADC006BD5C9 /* ViewController.m in Sources */,
+				EDABA05629EEC241006BD5C9 /* FirendViewController.m in Sources */,
+				EDFD83CD29EFBBED00FE614C /* FriendListViewController.m in Sources */,
+				EDFD83C829EFB07D00FE614C /* QiPageContentView.m in Sources */,
+				EDABA03229EEBADC006BD5C9 /* AppDelegate.m in Sources */,
+				EDABA05D29EEC25D006BD5C9 /* ManagerViewController.m in Sources */,
+				ED01D4FB29F00A0E00A05338 /* inviteCell.m in Sources */,
+				EDFD83D229EFCE1400FE614C /* inforCell.m in Sources */,
+				EDABA04329EEBADD006BD5C9 /* main.m in Sources */,
+				EDABA06029EEC26A006BD5C9 /* SettingsViewController.m in Sources */,
+				EDFD83D829EFD8B900FE614C /* KKRequest.m in Sources */,
+				EDFD83DC29EFE1B200FE614C /* Friend.m in Sources */,
+				EDABA03529EEBADC006BD5C9 /* SceneDelegate.m in Sources */,
+				EDFD83C629EFB07D00FE614C /* UIView+frame.m in Sources */,
+				EDABA05A29EEC24D006BD5C9 /* HomeViewController.m in Sources */,
+				EDFD83C729EFB07D00FE614C /* QiPageMenuView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDABA03929EEBADC006BD5C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDABA03A29EEBADC006BD5C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDABA03E29EEBADD006BD5C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDABA03F29EEBADD006BD5C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDABA04429EEBADD006BD5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDABA04529EEBADD006BD5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDABA04729EEBADD006BD5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA6AE4A851DA91BC77718718 /* Pods-kkinterview.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kkinterview/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jim.hsu.kkinterview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EDABA04829EEBADD006BD5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B955F516CEACD7A34BEE1C /* Pods-kkinterview.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kkinterview/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jim.hsu.kkinterview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDABA02829EEBADC006BD5C9 /* Build configuration list for PBXProject "kkinterview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDABA04429EEBADD006BD5C9 /* Debug */,
+				EDABA04529EEBADD006BD5C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDABA04629EEBADD006BD5C9 /* Build configuration list for PBXNativeTarget "kkinterview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDABA04729EEBADD006BD5C9 /* Debug */,
+				EDABA04829EEBADD006BD5C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDABA02529EEBADC006BD5C9 /* Project object */;
+}

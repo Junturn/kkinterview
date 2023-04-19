@@ -1,0 +1,16 @@
+PODS:
+  - KMPageMenu (0.0.2)
+
+DEPENDENCIES:
+  - KMPageMenu
+
+SPEC REPOS:
+  trunk:
+    - KMPageMenu
+
+SPEC CHECKSUMS:
+  KMPageMenu: 4dee4efb6d7db15f5194118ba8ce9a3c3569e196
+
+PODFILE CHECKSUM: 731b7004061d44e02a7b5c3b92ba445b433bfc97
+
+COCOAPODS: 1.12.0
