@@ -150,9 +150,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if(isExpand) {
-        return 1;
-    }
     return [inviteArray count];
 }
 
@@ -164,12 +161,20 @@
 #pragma mark -- UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    if(isExpand) {
+        if(indexPath.row == 0) {
+            return 80;
+        } else {
+            return 10;
+        }
+    }
+    return 80;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     isExpand = !isExpand;
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES]; // 取消選取狀態
+
     [tableView reloadData];
 }
 

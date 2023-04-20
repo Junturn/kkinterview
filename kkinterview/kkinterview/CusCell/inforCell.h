@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) IBOutlet UIButton * transerAccButtonV2;
 @property (nonatomic, weak) IBOutlet UIButton * inviteButton;
 @property (nonatomic, weak) IBOutlet UIButton * moreInfoButton;
+@property (nonatomic, weak) IBOutlet UIView * lineView;
 - (void) isInviteStatus:(BOOL) invite;
 @end
 

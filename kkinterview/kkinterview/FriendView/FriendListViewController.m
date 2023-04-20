@@ -36,6 +36,7 @@
     }
     friendTableView.freshDelegate = self;
     [friendTableView registerNib:[UINib nibWithNibName:@"inforCell" bundle:nil] forCellReuseIdentifier:@"inforCell"];
+    
 }
 
 -(void) viewWillAppear:(BOOL)animated {

@@ -33,13 +33,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-2S-8yA" userLabel="inviteLabel">
-                        <rect key="frame" x="70" y="38" width="117" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-2S-8yA" userLabel="inviteLabel">
+                        <rect key="frame" x="70" y="38" width="130" height="18"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="xjt-TT-tu1"/>
-                            <constraint firstAttribute="width" constant="117" id="yJi-C2-Xa4"/>
+                            <constraint firstAttribute="width" constant="130" id="yJi-C2-Xa4"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>

@@ -117,8 +117,8 @@
                         <constraint firstItem="V6R-RI-jql" firstAttribute="leading" secondItem="vSH-Gr-N9O" secondAttribute="leading" constant="30" id="zSL-bd-6Xg"/>
                     </constraints>
                 </view>
-                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VRU-9D-kql">
-                    <rect key="frame" x="0.0" y="194" width="390" height="120"/>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VRU-9D-kql">
+                    <rect key="frame" x="30" y="194" width="330" height="120"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="120" id="SWs-BF-lKl"/>
                     </constraints>
@@ -132,10 +132,10 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="vSH-Gr-N9O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="1NA-xP-jR3"/>
-                <constraint firstItem="VRU-9D-kql" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="29J-1h-0fH"/>
+                <constraint firstItem="VRU-9D-kql" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="29J-1h-0fH"/>
                 <constraint firstItem="VRU-9D-kql" firstAttribute="top" secondItem="vSH-Gr-N9O" secondAttribute="bottom" id="92q-Cq-cqd"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="vSH-Gr-N9O" secondAttribute="trailing" id="G95-mb-mi5"/>
-                <constraint firstAttribute="trailing" secondItem="VRU-9D-kql" secondAttribute="trailing" id="ndy-UP-lyW"/>
+                <constraint firstAttribute="trailing" secondItem="VRU-9D-kql" secondAttribute="trailing" constant="30" id="ndy-UP-lyW"/>
                 <constraint firstItem="vSH-Gr-N9O" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="q5W-Wq-0FY"/>
             </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>

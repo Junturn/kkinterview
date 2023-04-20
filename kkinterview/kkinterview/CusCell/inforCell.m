@@ -10,6 +10,7 @@
 
 @implementation inforCell
 @synthesize pinImageView, inviteButton, transerAccButton, transerAccButtonV2, nameLabel, moreInfoButton;
+@synthesize lineView;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -30,6 +31,7 @@
     [inviteButton setTitle:@"邀請中" forState:UIControlStateNormal];
     [inviteButton setTitleColor:brownGrey forState:UIControlStateNormal];
     
+    [lineView setBackgroundColor:brownGrey];
     
     UIImage *icFriendsMore = [[UIImage imageNamed:@"icFriendsMore"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [moreInfoButton setImage:icFriendsMore forState:UIControlStateNormal];
